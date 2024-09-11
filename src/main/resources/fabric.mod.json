@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "icon",
+  "version": "${version}",
+  "name": "Icon",
+  "description": "A simple mod that allows the Minecraft icon to be changed via resource packs",
+  "authors": ["diacritics-owo"],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "MIT",
+  "icon": "assets/icon/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["diacritics.owo.Icon"],
+    "client": ["diacritics.owo.IconClient"]
+  },
+  "mixins": [
+    "icon.mixins.json",
+    {
+      "config": "icon.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.5",
+    "minecraft": "~1.21",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
