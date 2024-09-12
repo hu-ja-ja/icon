@@ -1,0 +1,20 @@
+[artifact]
+folder = "build/libs"
+pattern = "icon-#.jar"
+game_versions = ["1.21", "1.21.1"]
+loaders = ["fabric", "quilt"]
+
+[changelog]
+type = "editor"
+
+[modrinth]
+id = "d1GIewqD"
+featured = true
+
+[[modrinth.dependencies]]
+id = "P7dR8mSH"
+dependency_type = "required"
+
+[github]
+repo = ["diacritics-owo", "icon"]
+draft = true
