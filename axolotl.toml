@@ -17,4 +17,4 @@ dependency_type = "required"
 
 [github]
 repo = ["diacritics-owo", "icon"]
-draft = true
+draft = false
