@@ -47,10 +47,10 @@ public class IconClient implements ClientModInitializer {
 							try {
 								IconsHelpers.setIcon(identifier, resource.getPack());
 								Icon.LOGGER.info("successfully used icons from resource pack {}",
-										resource.getPackId());
+										resource.getPack());
 								found = true;
 							} catch (IOException exception) {
-								Icon.LOGGER.warn("failed to get icons from resource pack {}", resource.getPackId(),
+								Icon.LOGGER.warn("failed to get icons from resource pack {}", resource.getPack(),
 										exception);
 							}
 						}
